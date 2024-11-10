@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>JavaScript Sandbox</title>
+    <meta charset="UTF-8" />
+    <!-- Include the model-viewer script -->
+    <script
+            type="module"
+            src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+</head>
+<body>
+<div id="app"></div>
+<h1>Model viewer below</h1>
+    <model-viewer
+            src="magnetic_field_of_solenoid_by_yuyalyj/scene.gltf"
+            ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
+            animation="animation"
+            ar
+            ar-scale="fixed"
+            camera-controls
+            touch-action="pan-y"
+            alt="A 3D model of an astronaut"
+            shadow-intensity="2"
+            skybox-image="country_club_1k.jpeg"
+            skybox-height="4m"
+            max-camera-orbit="auto 90deg auto"
+            xr-environment
+            style="width: 100%; height: 600px"
+    ></model-viewer>
+<h1>Model viewer above</h1>
+</body>
+</html>
