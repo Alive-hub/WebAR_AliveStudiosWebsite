@@ -57,7 +57,7 @@
 
             <!--            <button class="slide" onclick="switchSrc(this, 'Shoe')" style="background-image: url('3D Models/ICONS/ShoeICON.png');"></button>-->
 
-            <button class="slide" onclick="switchSrc(this, 'Washmachine')" style="background-image: url('3D Models/ICONS/WashmachineICON.png');"></button>
+<!--            <button class="slide" onclick="switchSrc(this, 'Washmachine')" style="background-image: url('3D Models/ICONS/WashmachineICON.png');"></button>-->
 
             <button class="slide" onclick="switchSrc(this, 'Toy')" style="background-image: url('3D Models/ICONS/ToyICON.png');"></button>
         </div>
@@ -101,6 +101,10 @@
     }
 
     const checkbox = document.getElementById('show-dimensions');
+
+    checkbox.addEventListener(('change'), () => {
+        setVisibility(checkbox.checked);
+    })
 
     const dimElements = [...modelViewer.querySelectorAll('.dim'), ...modelViewer.querySelectorAll('.dimensionLineContainer')];
 
