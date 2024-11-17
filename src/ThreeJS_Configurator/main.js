@@ -20,10 +20,10 @@ scene.add( cube );
 camera.position.z = 5;
 
 const loader = new GLTFLoader()
-loader.load('3d_printable_radial_pneumatic_engine.glb', function (gltf) {
+loader.load('3D Models/airliner_engine.glb', function (gltf) {
     scene.add(gltf.scene);
 }, undefined,function (error){
-    
+
 });
 
 
